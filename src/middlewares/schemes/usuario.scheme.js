@@ -7,7 +7,8 @@ let crearUsuario = Joi.object({
     apellido: Joi.string().required(),
     email: Joi.string().email().optional(),
     edad: Joi.number().optional(),
-    profesion: Joi.string().optional()
+    profesion: Joi.string().optional(),
+    password: Joi.string().required(),
 })
 
 module.exports = {
